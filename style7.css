@@ -1,0 +1,38 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    width: 100vw;
+}
+.main button{
+    width: 120px;
+    height: 60px;
+    background-color: rgb(173, 113, 230);
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+    border: none;
+}
+.main button:hover{
+    background-color: rgb(161, 106, 212);
+}
+.main{
+    display: flex;
+    position: relative;
+    justify-content: center;
+}
+.menu{
+    position: absolute;
+    box-shadow: 0  2px 10px 0 rgba(0,0,0,.3);
+    opacity: 0;
+    transition: opacity 150ms ease-in;
+}
+.menu button{
+    background-color: rgb(196, 150, 238);
+}
+.menu button:hover{
+    background-color: rgb(184, 134, 230);
+}
+#btn:focus+ .menu{
+    opacity: 1; 
+}
